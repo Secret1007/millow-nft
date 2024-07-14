@@ -1,15 +1,8 @@
 # Real Estate NFT DApp
 
-## Technology Stack & Tools
+## env：
 
-- Solidity (Writing Smart Contracts & Tests)
-- Javascript (React & Testing)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [React.js](https://reactjs.org/) (Frontend Framework)
-
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
+node 16.14.0
 
 ## Setting Up
 ### 1. Clone/Download the Repository
@@ -29,3 +22,16 @@ In a separate terminal execute:
 
 ### 7. Start frontend
 `$ npm run start`
+
+## write Contract
+
+### RealEstate
+
+```
+
+```
+
+### Escrow
+
+![image-20240714140504233](C:\Users\sunyi\AppData\Roaming\Typora\typora-user-images\image-20240714140504233.png)
+

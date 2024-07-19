@@ -7,14 +7,14 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract RealEstate is ERC721URIStorage {
     using Counters for Counters.Counter;
-    Counters.Counter private _tokenId;
+    Counters.Counter private _tokenIds;
 
     constructor() ERC721("Real Estate", "REAL") {}
 
     function mint(string memory tokenURI) public returns (uint256) {
-        _tokenId.increment();
+        _tokenIds.increment();
 
-        uint256 newItemId = _tokenId.current();
+        uint256 newItemId = _tokenIds.current();
         _mint(msg.sender, newItemId);
         _setTokenURI(newItemId, tokenURI);
 
@@ -22,6 +22,6 @@ contract RealEstate is ERC721URIStorage {
     }
 
     function totalSupply() public view returns (uint256) {
-        return _tokenId.current();
+        return _tokenIds.current();
     }
 }
